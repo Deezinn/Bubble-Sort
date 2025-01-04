@@ -1,21 +1,38 @@
-# Bubble-Sort
+# Bubble Sort
 
-notavelmente lento e é o mais simples dos algoritmos de ordenação
+O **Bubble Sort** é notavelmente lento, mas é o mais simples dos algoritmos de ordenação.
 
-funcionamento
+---
 
-comparação de dois numeros
+## Funcionamento
 
-se o da esquerda for maior, os elementos devem ser trocados
+1. **Comparação de dois números:**
+   - Se o número à esquerda for maior, os elementos devem ser trocados.
 
-desloca-se uma posição a direita
+2. **Deslocamento:**
+   - O algoritmo desloca-se uma posição à direita após cada comparação.
 
-A medida que o algoritmo avança, os intens maiores "surgem como uma bolha" na extremidade superior do vetor
+3. **Bolhas no vetor:**
+   - À medida que o algoritmo avança, os itens maiores "surgem como uma bolha" na extremidade superior do vetor.
 
-O algoritmo com 10 elementos faz 9 comparações na primeira passagem, 8 na segunda, 7 na terceira e assim por diante (n-1,n-2,n-3)
+---
 
-para 10 itens:
+## Análise de Comparações
 
-9-8-7-6-5-4-3-2-1 = 45
+- Para um vetor com 10 elementos:
+  - Na **primeira passagem**, realiza **9 comparações**.
+  - Na **segunda passagem**, realiza **8 comparações**.
+  - Na **terceira passagem**, realiza **7 comparações**.
+  - E assim por diante, seguindo o padrão: \( n-1, n-2, n-3 \).
 
-ha menos trocas do que ha comparações, poiis dois elementos serão trocados somente se precisatem
+### Exemplo com 10 itens:
+
+Número de comparações:
+\[ 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 45 \]
+
+---
+
+## Trocas
+
+- Há **menos trocas do que comparações**, pois dois elementos só serão trocados se necessário.
+
